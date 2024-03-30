@@ -1,5 +1,8 @@
 # Reconocimiento de color RGB, y tracking de objetos usando openCV
 
+Esto es un texto con <span style="color:red;">palabras coloreadas</span> usando HTML dentro de Markdown.
+
+
 El objetivo de este repositorio es almacenar el codigo de reconocimiento de colores en RGB para aplicaciones futuras de visión artificial con openCV y numpy. 
 Este codigo es utilizado para la identificación de objetos rectangulares o cuadrados de color rojo, verde o azul sobre una imagen de 620 x 480 pero puede adaptarse fácilmente a otras resoluciones de imagen ademas de formas. 
 
