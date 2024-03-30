@@ -1,10 +1,10 @@
-# Reconocimiento de color RGB, y tracking de objetos usando openCV
+# Reconocimiento de color RGB y tracking de objetos usando openCV
 
 El objetivo de este repositorio es almacenar el codigo de reconocimiento de colores en RGB para aplicaciones futuras de visión artificial con openCV y numpy. 
 Este codigo es utilizado para la identificación de objetos rectangulares o cuadrados de color rojo, verde o azul sobre una imagen de 620 x 480 pero puede adaptarse fácilmente a otras resoluciones de imagen ademas de formas. 
 
 <div style="text-align: center;">
-    <img src="imagenes-README/pruebaR.png" alt="Girasoles" style="width: 50%; display: inline-block; vertical-align: middle;">
+    <img src="imagenes-README/pruebaRGB.png" alt="prueba Ejecucion" style="width: 50%; display: inline-block; vertical-align: middle;">
 </div>
 
 ## Características
