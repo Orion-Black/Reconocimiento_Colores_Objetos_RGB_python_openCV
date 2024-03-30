@@ -17,13 +17,14 @@ Este codigo es utilizado para la identificación de objetos rectangulares o cuad
 ## Funcionamiento Interno
 
 De manera general este código funciona siguiendo una serie de pasos:
-- Abrir conexión o flujo de imágenes o video con <code>cv2.VideoCapture("URL o fuente de imagen o video")</code>
-- Se cargan los limites bajos y altos de color para RGB
-- Una vez abierto el flujo de datos de la camara o imagen se inicia la captura frame a frame del flujo de imagenes o video
-- Se llama a la funcion <code>detectarColor()</code> con el frame actual, los colores RGB altos y bajos y el nombre de color especificado
+- Abrir conexión o flujo de imágenes o video con <code>cv2.VideoCapture("URL o fuente de imagen o video")</code>.
+- Se cargan los limites bajos y altos de color para RGB.
+- Una vez abierto el flujo de datos de la camara o imagen se inicia la captura frame a frame del flujo de imagenes o video.
+- Se convierte cada frame a espacios de color HSV.
+- Se llama a la funcion <code>detectarColor()</code> con el frame actual, los colores RGB altos y bajos y el nombre de color especificado.
     - Ejemplo: <code>detectarColor( frame, azulBajo, azulAlto, "Azul")</code>
-- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo amarillo y se mostrara en una etiqueta el color del objeto
-- Se mantiene el tracking del objeto hasta que el programa finalice
+- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo amarillo y se mostrara en una etiqueta el color del objeto.
+- Se mantiene el tracking del objeto hasta que el programa finalice.
 
 Se admiten multiples objetos RGB.
 
@@ -31,7 +32,7 @@ Se admiten multiples objetos RGB.
 Este programa declara 2 funciones:
 1. <code>def detectarColor()</code>
     - En este método se recuperan 4 argumentos (frame, colorBajo, colorAlto, nombreColor), el primer parametro _frame_ recibe el frame actual del flujo de video generado por <code> cv2.VideoCapture() </code>, los siguientes dos argumentos toman los valores de limite alto y bajo de color para RGB y el ultimo parametro es el nombre del color.
-    En esta función también se generan las mascaras de color, se detectan los contornos del objeto, sus coordenadas, ancho W, alto H, y posteriormente si es un objeto con una área dentro del margen establecido se coloca el rectángulo amarillo con la etiqueta del color identificado y se inicia el tracking del objeto. 
+    En esta función también se convierte el frame de RGB a HSV y se generan las mascaras de color, se detectan los contornos del objeto, sus coordenadas, ancho W, alto H, y posteriormente si es un objeto con una área dentro del margen establecido se coloca el rectángulo amarillo con la etiqueta del color identificado y se inicia el tracking del objeto. 
 2. <code>def iniciar()</code>
     - Este método se llama para iniciar la captura de video o imagen y llama dentro de si a la función de detectarColor() y despliega en una ventana el video o imagen capturada y procesada con cv2. 
     
