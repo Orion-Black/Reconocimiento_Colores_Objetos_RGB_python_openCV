@@ -9,7 +9,7 @@ Este codigo es utilizado para la identificación de objetos rectangulares o cuad
 
 ## Características
 - **Detección de limites de objeto encerrado en rectángulos**: Originalmente al detectar un objeto de color RGB que este dentro del limite de área especificado sera marcado con un rectángulo amarillo
-- **Etiquetado**: Al detectarse un objeto RGB valido se etiquetara su color y se mostrara en formato *({Color} {coord X} {coord Y})*
+- **Etiquetado**: Al detectarse un objeto RGB valido se etiquetara su color y se mostrara en formato *("Color" "coord X" "coord Y")*
 - **Reconocimiento RGB**: Los limites bajos y altos (inferiores y superiores) marcados en el código permiten una amplia y precisa manera de reconocer los 3 colores RGB en diversas tonalidades de color y ajustes de luminosidad.
 - **Tracking certero de objetos**: Una vez identificado el objeto RGB este se mantendrá constantemente marcado por un rectángulo amarillo que indicara en todo momento su posición
 - **Muestreo de coordenadas X y Y sobre la imagen**: Al detectarse el objeto RGB valido se mostraran dos valores para las coordenadas *X* y *Y* respectivamente, estos valores son de manera relativa a las coordenadas del tamaño de imagen procesada. 
