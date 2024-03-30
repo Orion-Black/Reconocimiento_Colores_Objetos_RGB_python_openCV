@@ -37,7 +37,7 @@ Este programa declara 2 funciones:
 Para ejecutar el programa desde la terminal usamos el comando <code>python reconocimientoRGB.py</code>
 
 <div align="center">
-  <img src="imagenes-README/ejecucion.png" alt="Ejecución en terminal">
+  <img src="imagenes-README/ejecucion.png" alt="Ejecución en terminal" style="width: 50%;">
 </div>
 
 Éxito programador...
