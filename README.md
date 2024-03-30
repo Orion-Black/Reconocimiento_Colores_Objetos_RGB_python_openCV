@@ -8,7 +8,7 @@ Este codigo es utilizado para la identificación de objetos rectangulares o cuad
 </div>
 
 ## Características
-- **Detección de limites de objeto encerrado en rectángulos**: Originalmente al detectar un objeto de color RGB que este dentro del limite de área especificado sera marcado con un rectángulo amarillo
+- **Detección de limites de objeto encerrado en rectángulos**: Originalmente al detectar un objeto de color RGB que este dentro del limite de área especificado sera marcado con un rectángulo <span style="color: yellow;">amarillo</span>.
 - **Etiquetado**: Al detectarse un objeto RGB valido se etiquetara su color y se mostrara en formato *("Color" "coord X" "coord Y")*
 - **Reconocimiento RGB**: Los limites bajos y altos (inferiores y superiores) marcados en el código permiten una amplia y precisa manera de reconocer los 3 colores RGB en diversas tonalidades de color y ajustes de luminosidad.
 - **Tracking certero de objetos**: Una vez identificado el objeto RGB este se mantendrá constantemente marcado por un rectángulo amarillo que indicara en todo momento su posición
@@ -22,7 +22,7 @@ De manera general este código funciona siguiendo una serie de pasos:
 - Una vez abierto el flujo de datos de la camara o imagen se inicia la captura frame a frame del flujo de imagenes o video
 - Se llama a la funcion <code>detectarColor()</code> con el frame actual, los colores RGB altos y bajos y el nombre de color especificado
     - Ejemplo: <code>detectarColor( frame, azulBajo, azulAlto, "Azul")</code>
-- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo <p style="color: yellow;">amarillo</p> y se mostrara en una etiqueta el color del objeto
+- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo amarillo y se mostrara en una etiqueta el color del objeto
 - Se mantiene el tracking del objeto hasta que el programa finalice
 
 Se admiten multiples objetos RGB.
