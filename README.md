@@ -4,7 +4,7 @@ El objetivo de este repositorio es almacenar el codigo de reconocimiento de colo
 Este codigo es utilizado para la identificación de objetos rectangulares o cuadrados de color rojo, verde o azul sobre una imagen de 620 x 480 pero puede adaptarse fácilmente a otras resoluciones de imagen ademas de formas. 
 
 <div align="center">
-    <img src="imagenes-README/pruebaR.png" alt="Girasoles" style="width: 50%;">
+    <img src="imagenes-README/pruebaRGB.png" alt="prueba Ejecución" style="width: 50%;">
 </div>
 
 ## Características
