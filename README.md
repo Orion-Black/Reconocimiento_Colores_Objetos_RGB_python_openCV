@@ -22,7 +22,7 @@ De manera general este código funciona siguiendo una serie de pasos:
 - Una vez abierto el flujo de datos de la camara o imagen se inicia la captura frame a frame del flujo de imagenes o video
 - Se llama a la funcion <code>detectarColor()</code> con el frame actual, los colores RGB altos y bajos y el nombre de color especificado
     - Ejemplo: <code>detectarColor( frame, azulBajo, azulAlto, "Azul")</code>
-- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo amarillo y se mostrara en una etiqueta el color del objeto
+- Si es un objeto valido dentro del margen de area establecido se encerrara el objeto con un rectangulo <p style="color: yellow;">amarillo</p> y se mostrara en una etiqueta el color del objeto
 - Se mantiene el tracking del objeto hasta que el programa finalice
 
 Se admiten multiples objetos RGB.
